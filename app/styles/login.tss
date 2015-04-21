@@ -1,7 +1,7 @@
 // ANDROID *********************************************************
 
 ".viewLogin[platform=android]": { 
-	backgroundColor:Alloy.CFG.GREY_SUPERLIGHT,
+	backgroundColor:Alloy.CFG.WHITE,
 	navBarHidden: "true",
 	tabBarHidden: "true",
 	exitOnClose: 'true'
@@ -9,17 +9,17 @@
 
 ".logoTop[platform=android]": {
 	top: 0,
-	height: 75
+	height: 55
 }
 
 ".logotipo[platform=android]": {
-	height: 75
+	height: 55
 }
 
 ".containerLogin[platform=android]": {
     height: Ti.UI.FILL,
     width: Alloy.CFG.WidthDevice,
-    backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
+    backgroundColor: Alloy.CFG.WHITE,
     top: 90,
     layout: "vertical"
    
@@ -34,7 +34,7 @@
     color: Alloy.CFG.BLACK,
     borderColor: Alloy.CFG.BLACK,
     borderWidth : '2px',
-    backgroundColor:'transparent',
+    backgroundColor:Alloy.CFG.GREY_SUPERLIGHT
 
 }
 
@@ -46,7 +46,7 @@
     color: Alloy.CFG.BLACK,
     borderColor: Alloy.CFG.BLACK,
     borderWidth : '2px',
-    backgroundColor:'transparent',
+    backgroundColor:Alloy.CFG.GREY_SUPERLIGHT,
 }
 
 
@@ -133,8 +133,8 @@
 ".loginName[platform=ios]": {
     height: 40,
     width: '90%',
-    backgroundColor: Alloy.CFG.WHITE,
-    borderColor: Alloy.CFG.BLUE,
+    backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
+    borderColor: Alloy.CFG.BLACK,
     top: 10,
     paddingLeft: 5,
     color: Alloy.CFG.BLACK
@@ -144,8 +144,8 @@
 ".loginPass[platform=ios]": {
     height: 40,
     width: '90%',
-    backgroundColor: Alloy.CFG.WHITE,
-    borderColor: Alloy.CFG.BLUE,
+    backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
+    borderColor: Alloy.CFG.BLACK,
     top: 49,
     paddingLeft: 5,
     color: Alloy.CFG.BLACK
@@ -164,7 +164,7 @@
 ".buttonLogin[platform=ios]": {
     height: 40,
     width: '100%',
-    backgroundColor: Alloy.CFG.BLUE,
+    backgroundColor: Alloy.CFG.BLACK,
     left: 0,
     top: 20,
     color: Alloy.CFG.WHITE,

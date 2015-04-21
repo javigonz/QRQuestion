@@ -4,7 +4,7 @@
 		
 		<!-- Logotipo -->
 		<View class="logoTop">
-			<ImageView image="/images/Logo_VisualFree.png" class="logotipo"></ImageView>
+			<ImageView image="/images/logo.png" class="logotipo"></ImageView>
 		</View>
 		
 		<!-- Content -->

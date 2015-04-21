@@ -3,11 +3,7 @@
 		
 		
 		<!-- Content -->
-		<View class="containerHome" id="containerHome" >
-			
-			
-		
-		</View>
+		<View class="containerHome" id="containerHome" ></View>
 
 		
 	</View>

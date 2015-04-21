@@ -1,5 +1,4 @@
 var managment_View = require('managment_View');
-var qr = require('qrLibrary');
 var utils = require('utils');
 
 show();
@@ -21,11 +20,9 @@ function show(){
 	//Añado el container actual al objeto de navegación
 	Alloy.Globals.ActualContainer = $.viewHome;
 	
-	qr.createContentQR_READER($.containerHome);
-	
 	//Cambiar título de la cabecera
 	var evtData = {
-        title: L('text_9')
+        title: L('text_5')
     };
 	Ti.App.fireEvent('changeHeaderTitle', evtData);
 	Alloy.Globals.ActualSection = 'home';

@@ -4,11 +4,11 @@
 		
 		<!--<View class="LogoHeader" id="LogoHeader" >
 			<ImageView  image="/images/Logo_VisualFree.png"></ImageView>
-		</View>-->
+		</View>
 		
 		<View class="buttonBack" id="buttonBack" onClick="handlerBack">
 			<ImageView  image="/images/arrow_Left.png" onClick="handlerBack"></ImageView>
-		</View>
+		</View>-->
 		
 		<View class="viewTitle" id="viewTitle">
 			<Label class="viewTitleText" id="viewTitleText" ></Label>

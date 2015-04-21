@@ -47,9 +47,55 @@ else{
 var datamodel_Login = [];
 var datamodel_LoginToken = [];
 var datamodel_CloseSession = [];
-var datamodel_BonosConsumed = [];
-var datamodel_BonosBuyed = [];
-var datamodel_QR = [];
-var datamodel_QRValidar = [];
+
+var datamodel_messages = {
+						    "code": "1",
+						    "result": [
+									       {
+									            "id": 			"1",
+									            "date": 		"26/04/2015",
+									            "message": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        },
+									        {
+									            "id": 			"2",
+									            "date": 		"27/04/2015",
+									            "message": 		"Well, the way they make shows is, they make one show. That show's called a pilot. ",
+									      
+									        },
+									        {
+									            "id": 			"2",
+									            "date": 		"27/04/2015",
+									            "message": 		"Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when...  ",
+									      
+									        },
+									        {
+									            "id": 			"2",
+									            "date": 		"27/04/2015",
+									            "message": 		"Well, the way they make shows is, they make one show. That show's called a pilot. ",
+									      
+									        },
+									        {
+									            "id": 			"2",
+									            "date": 		"27/04/2014",
+									            "message": 		"Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker do that shit to me, he better  ",
+									      
+									        },{
+									            "id": 			"2",
+									            "date": 		"27/03/2015",
+									            "message": 		"Well, the way they make shows is, they make one show. That show's called a pilot. ",
+									      
+									        },
+									        {
+									            "id": 			"2",
+									            "date": 		"25/04/2015",
+									            "message": 		"Well, the way they make shows is, they make one show. That show's called a pilot. ",
+									      
+									        }
+
+
+						       		  ]
+						    };
+
 
 

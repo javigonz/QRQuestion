@@ -3,19 +3,19 @@
 ".viewFooter[platform=android]": { 
 	height: 50,
 	width: Ti.UI.FILL,
-	backgroundColor: Alloy.CFG.BLUE,
+	backgroundColor: Alloy.CFG.BLACK,
 	layout: 'horizontal'
 }
 
 ".buttonView[platform=android]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLUE
+    backgroundColor: Alloy.CFG.BLACK
     
 }
 
 ".buttonViewOver[platform=android]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLUE2
+    backgroundColor: Alloy.CFG.GREEN
     
 }
 
@@ -23,6 +23,15 @@
 	width: 35,
 	height: 35
    
+}
+
+".labelMenu[platform=android]": {
+	color: Alloy.CFG.WHITE,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+		fontSize: 	12,
+		fontWeight: 'normal'
+	}
 }
 
 
@@ -33,23 +42,32 @@
 ".viewFooter[platform=ios]": { 
 	height: 50,
 	width: Ti.UI.FILL,
-	backgroundColor: Alloy.CFG.BLUE,
+	backgroundColor: Alloy.CFG.BLACK,
 	layout: 'horizontal'
 }
 
 ".buttonView[platform=ios]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLUE
+    backgroundColor: Alloy.CFG.BLACK
     
 }
 
 ".buttonViewOver[platform=ios]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLUE2
+    backgroundColor: Alloy.CFG.GREEN
     
 }
 
 ".buttonImage[platform=ios]": {
     width: 35,
 	height: 35
+}
+
+".labelMenu[platform=ios]": {
+	color: Alloy.CFG.WHITE,
+	font: {
+		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+		fontSize: 	11,
+		fontWeight: 'normal'
+	}
 }

@@ -1,8 +1,7 @@
 // ANDROID *********************************************************
 
 ".viewHeader[platform=android]": { 
-	//backgroundImage: "/images/bg_header.png",
-	backgroundColor: Alloy.CFG.BLUE,
+	backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
 	height: 50,
 	width: Ti.UI.FILL,
 	top: 0
@@ -22,13 +21,11 @@
 }
 
 ".viewTitle[platform=android]":{
-    width: Ti.UI.FILL,
-    left: 60 
+    width: Ti.UI.FILL
 }
 
 ".viewTitleText[platform=android]": {
-	left: 0,
-	color: Alloy.CFG.WHITE,
+	color: Alloy.CFG.BLACK,
 	font: {
 		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
 		fontSize: 	16,
@@ -40,7 +37,7 @@
 // IPHONE *********************************************************
 
 ".viewHeader[platform=ios]": { 
-	backgroundImage: "/images/bg_header.png",
+	backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
 	height: 50,
 	width: Ti.UI.FILL,
 	top: 20
@@ -60,13 +57,11 @@
 }
 
 ".viewTitle[platform=ios]":{
-    width: Ti.UI.FILL,
-    left: 60 
+    width: Ti.UI.FILL
 }
 
 ".viewTitleText[platform=ios]": {
-	left: 0,
-	color: Alloy.CFG.BLUE,
+	color: Alloy.CFG.BLACK,
 	font: {
 		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
 		fontSize: 	15,

@@ -22,32 +22,6 @@ show();
 
 
 function show(){
-	
-	
-	//Comprobar si ya existe un Token de Login
-	tokenFile = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'tokenFile.txt');
-	
-	if (tokenFile.exists() === true)
-	{
-		var token = tokenFile.read();
-		
-		if (token.length > 1 && Alloy.Globals.CloseSession == 'false') //Existe un token guardado, entro directamente
-		{
-			Ti.App.addEventListener('loadDataLoginToken', loginWithToken);
-			managment_Data.LoadWebService_LoginToken(token.text);
-		}
-		else
-		{
-			console.log('Token con longitud 0, voy a logarme');
-			Alloy.Globals.CloseSession = 'false';
-			//IR AL LOGIN NORMAL
-		}
-	}
-	else
-	{
-		console.log('No existe el fichero de token y se crea');
-	}
-
 
 	Ti.App.fireEvent('closeLoading');
 	
@@ -147,8 +121,8 @@ function validateUser(){
 
 function handler_login(e)
 {
-	validateForm();
-	//managment_View.OpenSectionParam('home',[]);
+	//validateForm();
+	managment_View.OpenSectionParam('home',[]);
 }
 
 function handler_Checkin(){

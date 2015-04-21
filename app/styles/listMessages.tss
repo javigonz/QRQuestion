@@ -1,0 +1,129 @@
+// ANDROID *********************************************************
+
+".viewSectionBonosConsumed[platform=android]": { 
+	backgroundColor:Alloy.CFG.WHITE,
+	top: 0
+}
+
+
+".tableList[platform=android]": {
+	top: 0
+	}
+	".rowList[platform=android]": {
+		height: 'auto',
+		backgroundColor: Alloy.CFG.WHITE,
+		left: 0,
+		layout: 'vertical'
+		}
+	
+		".title[platform=android]": {	
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 5,
+			left: 10,
+			bottom: 15,
+			right: 10
+		}
+		
+		".subtitle[platform=android]": {	
+			color: Alloy.CFG.BLUE,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+				fontSize: 	15,
+				fontWeight: 'normal'
+			},
+			left: 10
+		}
+		".styleContainerDate[platform=android]": {
+			height: 'auto',
+			left: 10,
+			layout: 'horizontal'
+			}
+			".textDate[platform=android]": {	
+				color: Alloy.CFG.GREY,
+				font: {
+					fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+					fontSize: 	13,
+					fontWeight: 'bold'
+				},
+				left: 10,
+				top: 10
+			}
+			
+	".line[platform=android]": {
+		height: 2,
+		backgroundColor: Alloy.CFG.GREY,
+		left: 0,
+		width: 'auto',
+		bottom: 2
+		}
+
+
+
+// IPHONE *********************************************************
+
+".viewSectionBonosConsumed[platform=ios]": { 
+	backgroundColor:Alloy.CFG.WHITE,
+	top: 0
+}
+
+
+".tableList[platform=ios]": {
+	top: 0,backgroundColor:Alloy.CFG.GREEN,contentheight: 50
+	}
+	".rowList[platform=ios]": {
+		
+		backgroundColor: Alloy.CFG.WHITE,
+		left: 0,
+		layout: 'vertical'
+		}
+	
+		".title[platform=ios]": {	
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 5,
+			left: 10,
+			bottom: 15,
+			right: 10
+		}
+		
+		".subtitle[platform=ios]": {	
+			color: Alloy.CFG.BLUE,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+				fontSize: 	15,
+				fontWeight: 'normal'
+			},
+			left: 10
+		}
+		".styleContainerDate[platform=ios]": {
+			
+			left: 10,
+			layout: 'horizontal'
+			}
+			".textDate[platform=ios]": {	
+				color: Alloy.CFG.GREY,
+				font: {
+					fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
+					fontSize: 	13,
+					fontWeight: 'bold'
+				},
+				left: 10,
+				top: 10
+			}
+			
+	".line[platform=ios]": {
+		height: 2,
+		backgroundColor: Alloy.CFG.GREY,
+		left: 0,
+		width: 'auto',
+		bottom: 2
+		}
