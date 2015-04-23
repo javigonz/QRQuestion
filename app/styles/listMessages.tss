@@ -73,10 +73,10 @@
 
 
 ".tableList[platform=ios]": {
-	top: 0,backgroundColor:Alloy.CFG.GREEN,contentheight: 50
+	top: 0
 	}
 	".rowList[platform=ios]": {
-		
+		height: 'auto',
 		backgroundColor: Alloy.CFG.WHITE,
 		left: 0,
 		layout: 'vertical'

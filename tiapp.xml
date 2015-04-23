@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="acs-api-key-production" type="string">557OZKsc6QiDO5QK7JRkYFWyLCKKcXwL</property>
-    <property name="acs-api-key-development" type="string">DmPwYdue8Hr7NVksRFWUpzej6LmW5oLv</property>
     <id>info.qrquestion</id>
     <name>QRQuestion</name>
     <version>1.0</version>
@@ -14,7 +12,6 @@
     <navbar-hidden>false</navbar-hidden>
     <analytics>true</analytics>
     <guid>cd5d10e5-37eb-4961-bf94-16497994e952</guid>
-    <property name="ti.ui.defaultunit" type="string">dp</property>
     <ios>
         <plist>
             <dict>
@@ -44,12 +41,13 @@
         <manifest android:installLocation="auto" android:versionCode="1" android:versionName="0.0.1">
             <supports-screens android:anyDensity="true"
                 android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
-            <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="21"/>
+            <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="21"/>
             <application android:theme="@style/Theme.NoActionBar">
                 <activity
                     android:configChanges="keyboardHidden|orientation"
                     android:largeHeap="true"
                     android:name="org.appcelerator.titanium.TiActivity" android:screenOrientation="portrait"/>
+                <service android:name="com.appcelerator.cloud.push.PushService"/>
             </application>
         </manifest>
         <uses-permission android:name="android.permission.INTERNET"/>
@@ -57,7 +55,10 @@
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     </android>
     <modules>
-        <module platform="commonjs">ti.cloud</module>
+        <module platform="commonjs" version="3.2.7">ti.cloud</module>
+        <module platform="android" version="3.3.7">ti.cloudpush</module>
+        <module platform="iphone">ti.map</module>
+        <module platform="android">ti.map</module>
     </modules>
     <deployment-targets>
         <target device="android">true</target>
@@ -70,4 +71,13 @@
     <plugins>
         <plugin version="1.0">ti.alloy</plugin>
     </plugins>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="acs-api-key-production" type="string">557OZKsc6QiDO5QK7JRkYFWyLCKKcXwL</property>
+    <property name="acs-api-key-development" type="string">DmPwYdue8Hr7NVksRFWUpzej6LmW5oLv</property>
+    <property name="acs-base-url" type="string">https://api.cloud.appcelerator.com</property>
+    <property name="acs-push-type-development" type="string">gcm</property>
+    <property name="acs-push-type-production" type="string">gcm</property>
+    <property name="acs-push-type" type="string">gcm</property>
+    <property name="acs-oauth-secret-development" type="string">m9LXZKf1vkFnCNGDihwAHwrFsFRBC5D4</property>
+    <property name="acs-oauth-key-development" type="string">pKxhEXJ3ATNxPh9VT9X47VxlabeseaSM</property>
 </ti:app>

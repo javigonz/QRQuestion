@@ -28,6 +28,9 @@ function show(){
 	Alloy.Globals.ActualSection = 'home';
 	Ti.App.fireEvent('changeSection');
 	
+	//Inicio de las notificaciones Push
+	var managment_Push = require('managment_Push');
+	
 	Ti.App.fireEvent('closeLoading');
 }
 
