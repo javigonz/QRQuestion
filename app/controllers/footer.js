@@ -13,6 +13,7 @@ Ti.App.addEventListener('changeSection', function(e) {
 var buttonView = $.createStyle({classes: ['buttonView']});	
 var buttonViewOver = $.createStyle({classes: ['buttonViewOver']});	
 var labelMenu = $.createStyle({classes: ['labelMenu']});
+var buttonImage = $.createStyle({classes: ['buttonImage']});
 
 var view1;
 var view2;
@@ -51,12 +52,12 @@ function show(){
 	view1.width = widthButton;
 	view1.addEventListener('click', eventHandlerSection1);
 	
-	var label1 = Ti.UI.createLabel({
-				text: L('text_7')
+	var image1 = Titanium.UI.createImageView({
+				image: '/images/message.png'
 	});
-	label1.applyProperties(labelMenu);
+	image1.applyProperties(buttonImage);
 	
-	view1.add(label1);		
+	view1.add(image1);		
 	$.viewFooter.add(view1);
 
 	//Botón de menú para MENSAJES RECIBIDOS
@@ -65,12 +66,12 @@ function show(){
 	view2.width = widthButton;
 	view2.addEventListener('click', eventHandlerSection2);
 	
-	var label2 = Ti.UI.createLabel({
-				text: L('text_8')
+	var image2 = Titanium.UI.createImageView({
+				image: '/images/messages.png'
 	});
-	label2.applyProperties(labelMenu);
+	image2.applyProperties(buttonImage);
 	
-	view2.add(label2);		
+	view2.add(image2);		
 	$.viewFooter.add(view2);
 	
 	//Botón de menú para SALIR
@@ -79,12 +80,12 @@ function show(){
 	view3.width = widthButton;
 	view3.addEventListener('click', eventHandlerSection3);
 	
-	var label3 = Ti.UI.createLabel({
-				text: L('text_9')
+	var image3 = Titanium.UI.createImageView({
+				image: '/images/exit.png'
 	});
-	label3.applyProperties(labelMenu);
+	image3.applyProperties(buttonImage);
 	
-	view3.add(label3);		
+	view3.add(image3);		
 	$.viewFooter.add(view3);
 	
 

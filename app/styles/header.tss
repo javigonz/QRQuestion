@@ -1,7 +1,7 @@
 // ANDROID *********************************************************
 
 ".viewHeader[platform=android]": { 
-	backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
+	backgroundColor: Alloy.CFG.GREY_DARK,
 	height: 50,
 	width: Ti.UI.FILL,
 	top: 0
@@ -25,7 +25,7 @@
 }
 
 ".viewTitleText[platform=android]": {
-	color: Alloy.CFG.BLACK,
+	color: Alloy.CFG.WHITE,
 	font: {
 		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
 		fontSize: 	16,
@@ -37,7 +37,7 @@
 // IPHONE *********************************************************
 
 ".viewHeader[platform=ios]": { 
-	backgroundColor: Alloy.CFG.GREY_SUPERLIGHT,
+	backgroundColor: Alloy.CFG.GREY_DARK,
 	height: 50,
 	width: Ti.UI.FILL,
 	top: 20
@@ -61,7 +61,7 @@
 }
 
 ".viewTitleText[platform=ios]": {
-	color: Alloy.CFG.BLACK,
+	color: Alloy.CFG.WHITE,
 	font: {
 		fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
 		fontSize: 	15,

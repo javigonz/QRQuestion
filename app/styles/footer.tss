@@ -3,19 +3,19 @@
 ".viewFooter[platform=android]": { 
 	height: 50,
 	width: Ti.UI.FILL,
-	backgroundColor: Alloy.CFG.BLACK,
+	backgroundColor: Alloy.CFG.GREY_DARK,
 	layout: 'horizontal'
 }
 
 ".buttonView[platform=android]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLACK
+    backgroundColor: Alloy.CFG.GREY_DARK
     
 }
 
 ".buttonViewOver[platform=android]": {
     height: 50,
-    backgroundColor: Alloy.CFG.GREEN
+    backgroundColor: Alloy.CFG.BLACK
     
 }
 
@@ -42,19 +42,19 @@
 ".viewFooter[platform=ios]": { 
 	height: 50,
 	width: Ti.UI.FILL,
-	backgroundColor: Alloy.CFG.BLACK,
+	backgroundColor: Alloy.CFG.GREY_DARK,
 	layout: 'horizontal'
 }
 
 ".buttonView[platform=ios]": {
     height: 50,
-    backgroundColor: Alloy.CFG.BLACK
+    backgroundColor: Alloy.CFG.GREY_DARK
     
 }
 
 ".buttonViewOver[platform=ios]": {
     height: 50,
-    backgroundColor: Alloy.CFG.GREEN
+    backgroundColor: Alloy.CFG.BLACK
     
 }
 

@@ -14,6 +14,7 @@ Alloy.Globals.CloseSession = 'false';
 Alloy.CFG.GREY 	 			= "#878787";
 Alloy.CFG.GREY_LIGHT		= "#d9d9d9";
 Alloy.CFG.GREY_SUPERLIGHT	= "#e7e8ed";
+Alloy.CFG.GREY_DARK     	= "#383838";
 Alloy.CFG.WHITE	 			= "#FFFFFF";
 Alloy.CFG.BLACK	 			= "#000000";
 Alloy.CFG.BLUE	 			= "#0284b2";

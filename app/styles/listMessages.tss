@@ -76,7 +76,7 @@
 	top: 0
 	}
 	".rowList[platform=ios]": {
-		height: 'auto',
+		height: 140,
 		backgroundColor: Alloy.CFG.WHITE,
 		left: 0,
 		layout: 'vertical'
@@ -86,23 +86,22 @@
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	14,
+				fontSize: 	13,
 				fontWeight: 'normal'
 			},
 			top: 5,
-			left: 10,
-			bottom: 15,
-			right: 10
+			left: 10
 		}
 		
 		".subtitle[platform=ios]": {	
 			color: Alloy.CFG.BLUE,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
-				fontSize: 	15,
+				fontSize: 	14,
 				fontWeight: 'normal'
 			},
-			left: 10
+			left: 10,
+			top: 5,
 		}
 		".styleContainerDate[platform=ios]": {
 			

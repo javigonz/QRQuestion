@@ -9,11 +9,11 @@
 
 ".logoTop[platform=android]": {
 	top: 0,
-	height: 55
+	height: 45
 }
 
 ".logotipo[platform=android]": {
-	height: 55
+	height: 45
 }
 
 ".containerLogin[platform=android]": {
@@ -125,7 +125,7 @@
 
 ".logoTop[platform=ios]": {
 	top: 0,
-	height: 80,
+	height: 40,
     width: Ti.UI.FILL
 }
 
