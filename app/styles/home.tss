@@ -8,8 +8,47 @@
     height: Ti.UI.FILL,
     width: Ti.UI.FILL,
     backgroundColor: Alloy.CFG.WHITE,
-    top: 0
+    top: 0,
+    layout: 'vertical'
 }
+
+".titlePush[platform=android]": {	
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	15,
+				fontWeight: 'bold'
+			},
+			top: 30,
+			left: 10,
+			right: 10
+		}
+		
+".datePush[platform=android]": {	
+			color: Alloy.CFG.GREY,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 5,
+			left: 10,
+			right: 10
+		}		
+		
+".descriptionPush[platform=android]": {	
+			borderColor: Alloy.CFG.WHITE,
+	   		borderWidth : '0px',
+	    	backgroundColor:Alloy.CFG.WHITE,
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 10,
+			left: 0
+		}		
 
 
 // IPHONE *********************************************************
@@ -22,5 +61,44 @@
     height: Ti.UI.FILL,
     width: Ti.UI.FILL,
     backgroundColor: Alloy.CFG.WHITE,
-    top: 0
+    top: 0,  
+    layout: 'vertical'
 }
+
+".titlePush[platform=ios]": {	
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	15,
+				fontWeight: 'bold'
+			},
+			top: 30,
+			left: 10,
+			right: 10
+		}
+		
+".datePush[platform=ios]": {	
+			color: Alloy.CFG.GREY,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 5,
+			left: 10,
+			right: 10
+		}		
+		
+".descriptionPush[platform=ios]": {	
+			borderColor: Alloy.CFG.WHITE,
+	   		borderWidth : '0px',
+	    	backgroundColor:Alloy.CFG.WHITE,
+			color: Alloy.CFG.BLACK,
+			font: {
+				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
+				fontSize: 	14,
+				fontWeight: 'normal'
+			},
+			top: 10,
+			left: 10
+		}		

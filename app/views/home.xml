@@ -1,9 +1,12 @@
 <Alloy>
-	<View class="viewHome" id="viewHome" >
-		
-		
+	<Model src="Message" instance="true" id="message"/> 	<View class="viewHome" id="viewHome" >
+		 
 		<!-- Content -->
-		<View class="containerHome" id="containerHome" ></View>
+		<View class="containerHome" id="containerHome" >
+			<Label  id="titlePush" class="titlePush"></Label>
+			<Label  id="datePush" class="datePush"></Label>
+			<TextArea editable="false" scrollable="false" id="descriptionPush" class="descriptionPush" ></TextArea>>
+		</View>
 
 		
 	</View>

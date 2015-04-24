@@ -45,7 +45,9 @@ else{
 
 
 /////////////////////////////////////////////////////////////Modelo de Datos
+    
 
+var datamodel_message;
 var datamodel_Login = [];
 var datamodel_LoginToken = [];
 var datamodel_CloseSession = [];

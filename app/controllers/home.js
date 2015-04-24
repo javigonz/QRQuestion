@@ -32,6 +32,25 @@ function show(){
 	var managment_Push = require('managment_Push');
 	
 	Ti.App.fireEvent('closeLoading');
+	
+	///////////////////////////////////////////////////////////////////Modelo de Datos del mensaje
+	Alloy.Models.Message = Backbone.Model.extend({
+        defaults: {
+            title: '',
+            date: '',
+            description: ''
+        },
+        initialize: function(){
+         	this.on("change", function(model){
+         		$.titlePush.text = model.get("title");
+         		$.datePush.text = model.get("date");
+         		$.descriptionPush.value = model.get("description");
+            });  
+        } 
+    });
+    
+	datamodel_message = new Alloy.Models.Message({ title: "", date: '26/05/2015', description: ''});	
+
 }
 
 

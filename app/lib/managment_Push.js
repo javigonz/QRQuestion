@@ -18,39 +18,33 @@ var managment_View = require('managment_View');
 	};
 	
 	var onReceive=function(evt){
-	    //alert('A push notification was received!');
-	    
-	    var payload = JSON.parse(evt.payload);
-	    //managment_View.OpenInfoWindow(payload._id);
-	   /* if (payload._id == '')
-	    {
-	    	 managment_View.OpenSectionParam('press',[],'', Alloy.Globals.ActualContainer);
+	   
+	    if(Ti.Platform.osname =='android') {
+		    var payload = JSON.parse(evt.payload); 
+		    datamodel_message.set({title:payload.android.title});
+		    datamodel_message.set({description:payload.android.alert});
+		    console.log(payload);
 	    }
 	    else
 	    {
-	    	 managment_View.OpenSectionParam('pressDetail',[payload._id],'', Alloy.Globals.ActualContainer);
-	    }*/
-	   
-	   
-	   console.log('A push notification was received!' + JSON.stringify(evt));
+	    	var payload = JSON.stringify(evt);
+	    	var payload = JSON.parse(payload); 
+		    datamodel_message.set({title:payload.title});
+		    datamodel_message.set({description:payload.alert});
+		    console.log(payload);
+	    }
+	    
+	    //console.log('A push evt' + JSON.stringify(evt));
+	   // console.log('A push Payload' + payload);
+	   // console.log(payload);
 	};
 	
 	
 	var onLaunched=function(evt){
-	    //alert('A push notification was received - onLaunched');
-	   
-	    var payload = JSON.parse(evt.payload);
-	    //managment_View.OpenInfoWindow(payload._id);
-	   /* if (payload._id == '')
-	    {
-	    	 managment_View.OpenSectionParam('press',[],'', Alloy.Globals.ActualContainer);
-	    }
-	    else
-	    {
-	    	 managment_View.OpenSectionParam('pressDetail',[payload._id],'', Alloy.Globals.ActualContainer);
-	    }*/
-	    
-	    console.log('A push notification was received!' + JSON.stringify(evt));
+		
+	   /* var payload = JSON.parse(evt.payload); 
+	    datamodel_message.set({title:title});
+	    datamodel_message.set({description:alert});*/
 	};
 	
 	
