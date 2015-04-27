@@ -31,26 +31,24 @@ function show(){
 	//Inicio de las notificaciones Push
 	var managment_Push = require('managment_Push');
 	
+	$.titlePush.text = datamodel_message.get("title");
+ 	$.datePush.text = datamodel_message.get("date");
+ 	$.descriptionPush.value = datamodel_message.get("description");
+ 		
+	createEventsModel();
+	
 	Ti.App.fireEvent('closeLoading');
 	
-	///////////////////////////////////////////////////////////////////Modelo de Datos del mensaje
-	Alloy.Models.Message = Backbone.Model.extend({
-        defaults: {
-            title: '',
-            date: '',
-            description: ''
-        },
-        initialize: function(){
-         	this.on("change", function(model){
-         		$.titlePush.text = model.get("title");
-         		$.datePush.text = model.get("date");
-         		$.descriptionPush.value = model.get("description");
-            });  
-        } 
-    });
-    
-	datamodel_message = new Alloy.Models.Message({ title: "", date: '26/05/2015', description: ''});	
+}
 
+
+function createEventsModel(){
+	
+	datamodel_message.on("change", function(model){
+ 		$.titlePush.text = model.get("title");
+ 		$.datePush.text = model.get("date");
+ 		$.descriptionPush.value = model.get("description");
+    }); 
 }
 
 

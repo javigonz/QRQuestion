@@ -48,6 +48,20 @@ else{
     
 
 var datamodel_message;
+Alloy.Models.Message = Backbone.Model.extend({
+    defaults: {
+        title: '',
+        date: '',
+        description: ''
+    },
+    initialize: function(){
+     
+    } 
+});
+    
+datamodel_message = new Alloy.Models.Message({ title: "", date: '26/05/2015', description: ''});	
+	
+	
 var datamodel_Login = [];
 var datamodel_LoginToken = [];
 var datamodel_CloseSession = [];
