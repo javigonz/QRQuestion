@@ -21,6 +21,8 @@
 	<!-- COMÚN -->
 	<string name="text_13">Ups!! se produjo un error en la conexión, inténtalo más tarde.</string>
 	<string name="text_16">Debes introducir </string>
+	<string name="text_17">Debes introducir el mail </string>
+	<string name="text_18">válido</string>
 
 
 

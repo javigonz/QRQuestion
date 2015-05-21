@@ -22,6 +22,7 @@ exports.LoadWebService_Login = function(dataTelephone, dataEmail){
 			         Ti.App.fireEvent('loadDataLogin');
 	     		}
 	     		catch (e){
+	     			 console.log('katacroker');
 	     			 Ti.App.fireEvent('closeLoading');
 	     			 managment_View.OpenInfoWindow( L('text_13'));
 	     		}

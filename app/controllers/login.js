@@ -45,7 +45,7 @@ function validateForm() {
 					id: 'loginEmail',
 				    value: $.loginEmail.value,
 				    display: L('text_2'),    
-				    rules: 'required | valid_email'
+				    rules: 'required|valid_email'
 				}
 				
 				

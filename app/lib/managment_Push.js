@@ -70,7 +70,7 @@ var managment_View = require('managment_View');
 	Ti.API.info('registrar device al PUSH');
 	
 	// set the channel to subscribe to
-	var channel='952233560';
+	var channel= datamodel_Login.telefono;
 	
 	// register this device
 	ACSPush.registerDevice(channel,onReceive,onLaunched,onFocused,androidOptions,blackberryOptions);
