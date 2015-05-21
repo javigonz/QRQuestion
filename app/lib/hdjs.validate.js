@@ -18,7 +18,7 @@ var defaults = {
     messages: {
         required: L('text_16') + ' %s ',
         matches: L('text_37') + ' %s ' + L('text_39') + ' %s.',
-        valid_email: L('text_37') + ' %s ' +  L('text_40'),
+        valid_email: L('text_17') + ' %s ' +  L('text_18'),
         valid_emails: L('text_37') + ' %s ' +  L('text_40'),
         min_length: 'The %s field must be at least %s characters in length.',
         max_length: 'The %s field must not exceed %s characters in length.',

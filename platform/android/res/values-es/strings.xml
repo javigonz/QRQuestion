@@ -2,8 +2,8 @@
 <resources>
 
 	<!-- LOGIN -->
-	<string name="text_1">Correo electrónico</string>
-	<string name="text_2">Contraseña</string>
+	<string name="text_1">Número de teléfono</string>
+	<string name="text_2">Mail</string>
 	<string name="text_3">ENTRAR</string>
 	<string name="text_4">Mostrar contraseña</string>
 
@@ -11,6 +11,11 @@
 	<!-- TÍTULOS -->
 	<string name="text_5">MENSAJE</string>
 	<string name="text_6">MENSAJES RECIBIDOS</string>
+
+	<!-- MENÚ -->
+	<string name="text_7">Mensaje</string>
+	<string name="text_8">Mensajes recibidos</string>
+	<string name="text_9">Salir</string>
 
 
 	<!-- COMÚN -->

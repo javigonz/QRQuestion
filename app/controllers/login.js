@@ -31,40 +31,21 @@ function show(){
 		
 }
 
-function loginWithToken(){
-	
-	Ti.App.removeEventListener('loadDataLoginToken', loginWithToken);
-	
-	if (datamodel_LoginToken.result === 'ok')
-	{
-		console.log('LOGIN TOKEN OK');
-		Ti.App.fireEvent('IsProviderUser');
-		managment_View.OpenSectionParam('home',[]);
-	}
-	else
-	{
-		console.log('LOGIN TOKEN KO');
-		managment_View.OpenInfoWindow( L('text_13'));
-		Ti.App.fireEvent('closeLoading');
-	}
-}
-
-
 
 function validateForm() {
 	validator.run([
 				{
-					id: 'loginName',
-				    value: $.loginName.value,
+					id: 'loginTelephone',
+				    value: $.loginTelephone.value,
 				    display: L('text_1'),    
 				    rules: 'required'
 				},
 				
 				{
-					id: 'loginPass',
-				    value: $.loginPass.value,
+					id: 'loginEmail',
+				    value: $.loginEmail.value,
 				    display: L('text_2'),    
-				    rules: 'required'
+				    rules: 'required | valid_email'
 				}
 				
 				
@@ -79,14 +60,14 @@ var validationCallback = function(errors) {
 		//Muestra la pantalla de Info con los errores
 		Ti.App.fireEvent('closeLoading');
 		managment_View.OpenInfoWindow(errors[0].message);
-
+		
 		
 	} 
 	else 
 	{
 		Ti.App.fireEvent('openLoading');
 		Ti.App.addEventListener('loadDataLogin', validateUser);
-		managment_Data.LoadWebService_Login($.loginName.value, $.loginPass.value);
+		managment_Data.LoadWebService_Login($.loginTelephone.value, $.loginEmail.value);
 	}
 };
 
@@ -97,10 +78,6 @@ function validateUser(){
 	
 	if (datamodel_Login.result === 'ok')
 	{
-		tokenFile.write(datamodel_Login.token);
-		
-		// type = 2 -> proveedor    type = 3 -> administrador
-		Ti.App.fireEvent('IsProviderUser');
 		managment_View.OpenSectionParam('home',[]);
 	}
 	else
@@ -121,8 +98,8 @@ function validateUser(){
 
 function handler_login(e)
 {
-	//validateForm();
-	managment_View.OpenSectionParam('home',[]);
+	validateForm();
+	//managment_View.OpenSectionParam('home',[]);
 }
 
 function handler_Checkin(){

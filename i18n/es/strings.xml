@@ -2,8 +2,8 @@
 <resources>
 
 	<!-- LOGIN -->
-	<string name="text_1">Correo electrónico</string>
-	<string name="text_2">Contraseña</string>
+	<string name="text_1">Número de teléfono</string>
+	<string name="text_2">Mail</string>
 	<string name="text_3">ENTRAR</string>
 	<string name="text_4">Mostrar contraseña</string>
 
@@ -21,6 +21,8 @@
 	<!-- COMÚN -->
 	<string name="text_13">Ups!! se produjo un error en la conexión, inténtalo más tarde.</string>
 	<string name="text_16">Debes introducir </string>
+	<string name="text_16">Debes introducir el mail </string>
+	<string name="text_16">válido</string>
 
 
 

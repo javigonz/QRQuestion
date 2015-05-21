@@ -10,13 +10,13 @@
 		<!-- Content -->
 		<View class="containerLogin" id="containerLogin" >
 				
-				<TextField class="loginName" id="loginName"  touchEnabled="true"  passwordMask="false" hintText="L('text_1')" ></TextField>
-				<TextField class="loginPass" id="loginPass"  touchEnabled="true" passwordMask="true" hintText="L('text_2')" ></TextField>
+				<TextField class="loginName" id="loginTelephone" value="622541655"  touchEnabled="true"  passwordMask="false" hintText="L('text_1')" ></TextField>
+				<TextField class="loginPass" id="loginEmail" value="php@digitmedia.es"  touchEnabled="true"  hintText="L('text_2')" ></TextField>
 				
-				<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">
+				<!--<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">
 						<Button class="buttonChecking" id="buttonChecking" ></Button>
 						<Label class="buttonChecking_text" id="buttonChecking_text" text="L('text_4')"></Label>
-				</View>
+				</View>-->
 					
 				<View class="viewButtonLogin">
 					<Button class="buttonLogin" id="buttonLogin" title="L('text_3')" onClick="handler_login"></Button>
