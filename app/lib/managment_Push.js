@@ -34,7 +34,7 @@ var managment_View = require('managment_View');
 		    console.log(payload);
 	    }
 	    
-	    //console.log('A push evt' + JSON.stringify(evt));
+	  //  console.log('A push evt' + JSON.stringify(evt));
 	   // console.log('A push Payload' + payload);
 	   // console.log(payload);
 	};

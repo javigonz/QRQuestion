@@ -1,6 +1,7 @@
 var managment_View = require('managment_View');
 var managment_Data = require('managment_Data');
 var utils = require('utils');
+var moment = require('moment');
 
 
 show();
@@ -44,6 +45,7 @@ function show(){
 	Ti.App.fireEvent('openLoading');
 	Ti.App.addEventListener('loadDataMessages', loadMessages);
 	managment_Data.LoadWebService_Messages(datamodel_Login.id);
+	//loadMessages();
 }
 
 
@@ -63,6 +65,8 @@ function loadMessages()
 			var styleContainerDate = $.createStyle({classes: ['styleContainerDate']});
 			var textDate = $.createStyle({classes: ['textDate']});
 			var sytleLine = $.createStyle({classes: ['sytleLine']});
+			var styleViewDate = $.createStyle({classes: ['styleViewDate']});
+			var styleIcon = $.createStyle({classes: ['styleIcon']});
 			
 	
 			datamodel_messages.data.forEach(function (element, index, array) {
@@ -75,17 +79,26 @@ function loadMessages()
 				});
 				containerLabelTitle.applyProperties(title);	
 				
+				var containerDate = Ti.UI.createView({});
+				containerDate.applyProperties(styleViewDate);
+				
+				var icon = Ti.UI.createImageView({
+					image: '/images/iconText.png'
+				});
+				icon.applyProperties(styleIcon);
+				
 				var textDateCompra = Ti.UI.createLabel({
-					text: element.fecha_alta
+					text: moment(element.fecha_alta).format("dddd, D MMMM YYYY, h:mm")
 				});
 				textDateCompra.applyProperties(textDate);
-				
-				
+
 				var line = Ti.UI.createView({});
 				line.applyProperties(sytleLine);
 				
 				
-				containerTableRow.add(textDateCompra);
+				containerDate.add(icon);
+				containerDate.add(textDateCompra);
+				containerTableRow.add(containerDate);
 				containerTableRow.add(containerLabelTitle);
 				containerTableRow.add(line);
 				rows.push(containerTableRow);
@@ -103,9 +116,6 @@ function loadMessages()
 		Ti.App.fireEvent('closeLoading');
 	
 }
-
-
-
 
 
 /* ***********************************************************

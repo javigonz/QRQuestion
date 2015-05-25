@@ -10,7 +10,7 @@
 		<!-- Content -->
 		<View class="containerLogin" id="containerLogin" >
 				
-				<TextField class="loginName" id="loginTelephone" value="622541655"  touchEnabled="true"  passwordMask="false" hintText="L('text_1')" ></TextField>
+				<TextField class="loginName" id="loginTelephone" value="622541655"  touchEnabled="true" hintText="L('text_1')" ></TextField>
 				<TextField class="loginPass" id="loginEmail" value="php@digitmedia.es"  touchEnabled="true"  hintText="L('text_2')" ></TextField>
 				
 				<!--<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">

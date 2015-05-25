@@ -3,8 +3,11 @@
 		 
 		<!-- Content -->
 		<View class="containerHome" id="containerHome" >
-			<Label  id="titlePush" class="titlePush"></Label>
-			<Label  id="datePush" class="datePush"></Label>
+			<View class="styleViewDate">
+				<ImageView class="styleIcon" image="/images/iconText.png"></ImageView>
+				<Label  id="datePush" class="datePush"></Label>
+			</View>
+			
 			<TextArea editable="false" scrollable="false" id="descriptionPush" class="descriptionPush" ></TextArea>>
 		</View>
 

@@ -20,7 +20,7 @@ Alloy.CFG.BLACK	 			= "#000000";
 Alloy.CFG.BLUE	 			= "#0284b2";
 Alloy.CFG.BLUE2	 			= "#005f80";
 Alloy.CFG.RED      			= "#e42626";
-Alloy.CFG.GREEN      		= "#3abd0c";
+Alloy.CFG.GREEN      		= "#1f7501";
 
 
 //Altura y Anchura del Dispositivo
@@ -59,12 +59,67 @@ Alloy.Models.Message = Backbone.Model.extend({
     } 
 });
     
-datamodel_message = new Alloy.Models.Message({ title: "", date: '26/05/2015', description: ''});	
+datamodel_message = new Alloy.Models.Message({ title: L('text_19'),  description: ''});	
 	
 	
 var datamodel_Login = [];
 var datamodel_LoginToken = [];
 var datamodel_CloseSession = [];
 var datamodel_messages = [];
+
+/*var datamodel_messages = {
+						    "result": "ok",
+						    "data": [
+									       {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. ",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear...",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        },
+									         {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        }, {
+									            "id": 			"1",
+									            "fecha_alta": "2014-06-23 21:17:50",
+									            "mensaje": 		"Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear.",
+									      
+									        }
+
+									        
+						       		  ]
+						    };*/
 
 

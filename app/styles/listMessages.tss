@@ -15,15 +15,26 @@
 		left: 0,
 		layout: 'vertical'
 		}
+		
+		".styleViewDate[platform=android]": {
+			height: 25,
+			left: 10,
+			top: 10,
+			layout: 'horizontal'
+		}
+			".styleIcon[platform=android]": {
+				left: 0,
+			}
+	
 	
 		".title[platform=android]": {	
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	14,
+				fontSize: 	17,
 				fontWeight: 'normal'
 			},
-			top: 5,
+			top: 0,
 			left: 10,
 			bottom: 15,
 			right: 10
@@ -36,7 +47,8 @@
 				fontSize: 	15,
 				fontWeight: 'normal'
 			},
-			left: 10
+			left: 10,
+			top: 10
 		}
 		".styleContainerDate[platform=android]": {
 			height: 'auto',
@@ -44,14 +56,13 @@
 			layout: 'horizontal'
 			}
 			".textDate[platform=android]": {	
-				color: Alloy.CFG.GREY,
+				color: Alloy.CFG.GREEN,
 				font: {
 					fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_LIGHT, 
-					fontSize: 	13,
+					fontSize: 	15,
 					fontWeight: 'bold'
 				},
-				left: 10,
-				top: 10
+				left: 5
 			}
 			
 	".line[platform=android]": {

@@ -8,7 +8,7 @@
     height: Ti.UI.FILL,
     width: Ti.UI.FILL,
     backgroundColor: Alloy.CFG.WHITE,
-    top: 0,
+    top: 10,
     layout: 'vertical'
 }
 
@@ -16,23 +16,32 @@
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	15,
+				fontSize: 	16,
 				fontWeight: 'bold'
 			},
 			top: 30,
-			left: 10,
+			left: 5,
 			right: 10
 		}
+".styleViewDate[platform=android]": {
+			height: 25,
+			left: 10,
+			top: 10,
+			layout: 'horizontal'
+		}
+			".styleIcon[platform=android]": {
+				left: 0,
+			}		
 		
 ".datePush[platform=android]": {	
-			color: Alloy.CFG.GREY,
+			color: Alloy.CFG.GREEN,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	14,
+				fontSize: 	16,
 				fontWeight: 'normal'
 			},
 			top: 5,
-			left: 10,
+			left: 5,
 			right: 10
 		}		
 		
@@ -43,7 +52,7 @@
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	14,
+				fontSize: 	17,
 				fontWeight: 'normal'
 			},
 			top: 10,

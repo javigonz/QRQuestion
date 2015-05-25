@@ -1,5 +1,6 @@
 var managment_View = require('managment_View');
 var utils = require('utils');
+var moment = require('moment');
 
 show();
 
@@ -31,8 +32,7 @@ function show(){
 	//Inicio de las notificaciones Push
 	var managment_Push = require('managment_Push');
 	
-	$.titlePush.text = datamodel_message.get("title");
- 	$.datePush.text = datamodel_message.get("date");
+ 	$.datePush.text = datamodel_message.get("title");
  	$.descriptionPush.value = datamodel_message.get("description");
  		
 	createEventsModel();
@@ -45,8 +45,7 @@ function show(){
 function createEventsModel(){
 	
 	datamodel_message.on("change", function(model){
- 		$.titlePush.text = model.get("title");
- 		$.datePush.text = model.get("date");
+ 		$.datePush.text = model.get("title");
  		$.descriptionPush.value = model.get("description");
     }); 
 }
