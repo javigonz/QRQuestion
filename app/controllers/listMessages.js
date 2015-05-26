@@ -61,8 +61,6 @@ function loadMessages()
 			//Estilos
 			var rowList = $.createStyle({classes: ['rowList']});
 			var title = $.createStyle({classes: ['title']});
-			var subtitle = $.createStyle({classes: ['subtitle']});
-			var styleContainerDate = $.createStyle({classes: ['styleContainerDate']});
 			var textDate = $.createStyle({classes: ['textDate']});
 			var sytleLine = $.createStyle({classes: ['sytleLine']});
 			var styleViewDate = $.createStyle({classes: ['styleViewDate']});

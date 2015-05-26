@@ -78,23 +78,35 @@
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	15,
+				fontSize: 	16,
 				fontWeight: 'bold'
 			},
 			top: 30,
 			left: 10,
 			right: 10
 		}
+".styleViewDate[platform=ios]": {
+			height: 30,
+			left: 10,
+			top: 10,
+			layout: 'horizontal'
+		}		
+	".styleIcon[platform=ios]": {
+					left: 0,
+					width: 28,
+					height: 28
+				}
+			
 		
 ".datePush[platform=ios]": {	
-			color: Alloy.CFG.GREY,
+			color: Alloy.CFG.GREEN,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	14,
+				fontSize: 	16,
 				fontWeight: 'normal'
 			},
-			top: 5,
-			left: 10,
+			top: 8,
+			left: 7,
 			right: 10
 		}		
 		
