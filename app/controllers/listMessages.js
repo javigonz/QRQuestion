@@ -67,7 +67,7 @@ function loadMessages()
 			var styleIcon = $.createStyle({classes: ['styleIcon']});
 			
 	
-			datamodel_messages.data.forEach(function (element, index, array) {
+			datamodel_messages.data.reverse().forEach(function (element, index, array) {
 				
 				var containerTableRow = Ti.UI.createTableViewRow({});
 				containerTableRow.applyProperties(rowList);

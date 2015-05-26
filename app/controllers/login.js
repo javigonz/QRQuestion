@@ -5,7 +5,8 @@ var utils = require('utils');
 var validate = require('hdjs.validate');
 var validator = new validate.FormValidator();
 var checking_enable = 'false';
-var tokenFile;
+var tokenFileTelefono;
+var tokenFileMail;
 
 show();
 
@@ -22,7 +23,36 @@ show();
 
 
 function show(){
-
+	
+		//Comprobar si ya existe un Token de Login
+	tokenFileTelefono = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'tokenFileTelefono.txt');
+	tokenFileMail = Titanium.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,'tokenFileMail.txt');
+	
+	if (tokenFileTelefono.exists())
+	{
+		var tokenTelefono = tokenFileTelefono.read();
+		var tokenMail = tokenFileMail.read();
+		
+		if (tokenTelefono.length > 1 && Alloy.Globals.CloseSession == 'false') //Existe un token guardado, entro directamente
+		{
+			$.loginTelephone.value = tokenTelefono;
+			$.loginEmail.value = tokenMail;
+			
+			$.buttonLogin.fireEvent('click');
+			
+		}
+		else
+		{
+			console.log('Token con longitud 0, voy a logarme');
+			Alloy.Globals.CloseSession = 'false';
+			//IR AL LOGIN NORMAL
+		}
+	}
+	else
+	{
+		console.log('No existe el fichero de token y se crea');
+	}
+	
 	Ti.App.fireEvent('closeLoading');
 	
 	//Añado el container actual al objeto de navegación
@@ -30,6 +60,7 @@ function show(){
 	Alloy.Globals.ActualSection = 'login';
 		
 }
+
 
 
 function validateForm() {
@@ -78,6 +109,8 @@ function validateUser(){
 	
 	if (datamodel_Login.result === 'ok')
 	{
+		tokenFileTelefono.write(datamodel_Login.telefono);
+		tokenFileMail.write(datamodel_Login.email);
 		managment_View.OpenSectionParam('home',[]);
 	}
 	else

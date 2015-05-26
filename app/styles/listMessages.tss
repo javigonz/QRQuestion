@@ -113,7 +113,7 @@
 			color: Alloy.CFG.BLACK,
 			font: {
 				fontFamily: Alloy.CFG.FONT_HELVETICA_NEUE_LT_MED, 
-				fontSize: 	17,
+				fontSize: 	16,
 				fontWeight: 'normal'
 			},
 			top: 10,

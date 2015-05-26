@@ -3,7 +3,7 @@
 
 	<!-- LOGIN -->
 	<string name="text_1">Número de teléfono</string>
-	<string name="text_2">Mail</string>
+	<string name="text_2">Correo electrónico</string>
 	<string name="text_3">ENTRAR</string>
 	<string name="text_4">Mostrar contraseña</string>
 

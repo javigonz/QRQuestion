@@ -10,8 +10,8 @@
 		<!-- Content -->
 		<View class="containerLogin" id="containerLogin" >
 				
-				<TextField class="loginName" id="loginTelephone" value="622541655"  touchEnabled="true" hintText="L('text_1')" ></TextField>
-				<TextField class="loginPass" id="loginEmail" value="php@digitmedia.es"  touchEnabled="true"  hintText="L('text_2')" ></TextField>
+				<TextField class="loginName" id="loginTelephone"   touchEnabled="true" hintText="L('text_1')" ></TextField>
+				<TextField class="loginPass" id="loginEmail"  touchEnabled="true"  hintText="L('text_2')" ></TextField>
 				
 				<!--<View id="view_showpass" class="view_showpass" onClick="handler_Checkin">
 						<Button class="buttonChecking" id="buttonChecking" ></Button>
