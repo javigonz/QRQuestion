@@ -51,7 +51,7 @@
 
 
 ".viewButtonLogin[platform=android]": {
-    height: 210,
+    height: 180,
     width: '90%',
     top: 10,
     color: Alloy.CFG.WHITE,

@@ -35,10 +35,11 @@ function show(){
 		
 		if (tokenTelefono.length > 1 && Alloy.Globals.CloseSession == 'false') //Existe un token guardado, entro directamente
 		{
-			$.loginTelephone.value = tokenTelefono;
-			$.loginEmail.value = tokenMail;
+			$.loginTelephone.value = tokenTelefono.text;
+			$.loginEmail.value = tokenMail.text;
 			
-			$.buttonLogin.fireEvent('click');
+			Ti.App.addEventListener('loadDataLogin', validateUser);
+			managment_Data.LoadWebService_Login(tokenTelefono.text, tokenMail.text);
 			
 		}
 		else
@@ -115,7 +116,7 @@ function validateUser(){
 	}
 	else
 	{
-		managment_View.OpenInfoWindow( L('text_13'));
+		managment_View.OpenInfoWindow( L('text_20'));
 		Ti.App.fireEvent('closeLoading');
 	}
 	

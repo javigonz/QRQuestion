@@ -23,14 +23,14 @@ exports.LoadWebService_Login = function(dataTelephone, dataEmail){
 	     		}
 	     		catch (e){
 	     			 Ti.App.fireEvent('closeLoading');
-	     			 managment_View.OpenInfoWindow( L('text_13'));
+	     			 managment_View.OpenInfoWindow( L('text_20'));
 	     		}
 	        
 
 	     },
 	     onerror : function(e) {
 	         Ti.App.fireEvent('closeLoading');
-	         managment_View.OpenInfoWindow( L('text_13'));
+	         managment_View.OpenInfoWindow( L('text_20'));
 	     },
 	     timeout : 5000  // in milliseconds
  	});
@@ -46,8 +46,6 @@ exports.LoadWebService_Login = function(dataTelephone, dataEmail){
 			    		email: dataEmail
 			  	   };
 			  	
-			  	  			  
- 	
  	client.open("POST", url_WebService_Login);
 	client.send(dataSend);
 	
